@@ -1,2 +1,4 @@
 # sfgz_NewsPortal
-LAB
+LAB – Erstellung eines Newsportals
+
+Abgabe: 21. Januar 2021
