@@ -1,5 +1,4 @@
 // Header
-
 .sticky {
   position: fixed;
   top: 0;
@@ -17,13 +16,13 @@
   margin-top: 8px;
   margin-right: 16px;
   background: #B3001D;
-  font-size: 17px;
+  font-size: 16px;
   border: none;
 }
 
 
 .topnav .search-container button:hover {
-  background: #ccc;
+  background: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,7 +62,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-border-bottom: 5px solid white;
+border-bottom: 6px solid white;
 }
 
 
@@ -90,4 +89,131 @@ border-bottom: 5px solid white;
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+
+
+
+-----------------------------------------------------
+
+
+
+
+/* Basic styling */
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: white;
+}
+body {
+  margin: 0;
+}
+a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border-bottom: 5px solid transparent;
+}
+
+a.nav__item--active,
+a:hover {
+  color: white;
+}
+a:hover {
+  border-color: white;
+}
+a.international:hover {
+  border-color: #D7D66D;
+}
+
+a.nav__item--active {
+  border-color: white;
+}
+/* column */
+.container {
+  font-weight: 400;
+  width: 92%;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* compensate for header */
+.container--first-content {
+  margin-top: 5rem;
+}
+
+/* header doesn't scroll */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #B3001D;
+  height: 2.8rem;
+}
+
+/* center the navigation in height */
+.container--nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* whole heigth */
+.nav {
+  position: relative;
+  width: 100%;
+}
+
+/* the gradient right */
+.nav:after {
+  content: "";
+  width: 1.25em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 230, 230, 0),
+    rgba(230, 230, 230, 1)
+  );
+}
+/* scroll-area */
+.nav__inner {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  width: 100%;
+  scrollbar-width: none; /* no-scrollbar: firefox */
+}
+.nav__inner::-webkit-scrollbar {
+  display: none; /* no-scrollbar: Safari and Chrome */
+}
+
+/* at the end of the list we add space*/
+.nav__inner:after {
+  display: block;
+  content: "";
+  width: 1.25em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 1.25em;
+}
+
+/* don't wrap within the items */
+.nav__item {
+  white-space: nowrap;
+}
+
+/* space between the items */
+.nav__item + .nav__item {
+  margin-left: 1.25em;
 }
