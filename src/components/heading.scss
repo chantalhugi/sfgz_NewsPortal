@@ -18,19 +18,21 @@ h6 {
 
 h1 {
   font-size: 1rem * $font-scale--default * $font-scale--default;
-  margin-bottom: 3em;
+  margin-bottom: 0.5em;
+  margin-top: 0.25em;
 
   @include media(m) {
     font-size: 1rem * $font-scale--m * $font-scale--m;
   }
 
   @include media(l) {
-    font-size: 1rem * $font-scale--l * $font-scale--l;
+    font-size: 0.8rem * $font-scale--l * $font-scale--l;
   }
 }
 
 h2 {
-  font-size: 1rem * $font-scale--default;
+  font-size: 0.7rem * $font-scale--default;
+
 
   @include media(m) {
     font-size: 1rem * $font-scale--m;
@@ -42,5 +44,20 @@ h2 {
 }
 
 h3 {
+  font-size: 0.8rem;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+}
+
+
+h4 {
   font-size: 1rem;
+    margin-bottom: 0em;
+}
+
+
+h5 {
+  font-size: 0.6rem;
+  font-weight: 400;
+    margin-bottom: 0em;
 }

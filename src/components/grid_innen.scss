@@ -1,8 +1,8 @@
-// 12er Column-Grid
-.grid-12 {
+// 2er innen Column-Grid
+.grid-innen {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 3%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 1%;
 
   // visualisierung der Columns
   @include debug() {
@@ -24,60 +24,20 @@ div[class^="card-"] {
   }
 }
 
-.column-12 {
-  grid-column: span 12;
-}
 
-.column-1 {
-  grid-column: span 12;
-  @include media(m) {
-    grid-column: span 1;
-  }
-}
-
-.column-2 {
-  grid-column: span 12;
-  @include media(m) {
-    grid-column: span 2;
-  }
-}
-
-.column-3 {
-  grid-column: span 12;
-  @include media(m) {
-    grid-column: span 3;
-  }
-}
-
-.column-4 {
-  grid-column: span 12;
-  @include media(m) {
-    grid-column: span 4;
-  }
-}
-
-.column-5to12 {
-  grid-column-start: 2;
-  grid-column-end: span 11;
-  @include media(m) {
-    grid-column-start: 5;
-    grid-column-end: span 8;
-  }
-}
-
-// 12er × 12er Grid
-.grid-12-6 {
+// Grid innen
+.grid-innen {
   grid-auto-flow: dense;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 1.5rem;
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 1.5rem;
-  height: 20rem;
+  height: 15rem;
 }
 
 
-.grid-12-6 img {
+.grid-innen img {
 	display: block;
 	object-fit: cover;
 	width: 100%;
@@ -85,172 +45,8 @@ div[class^="card-"] {
 }
 
 
-.card-2-4 {
+.card-innen-2-4 {
   grid-column: span 2;
   grid-row: span 4;
-  background-color: grey;
-}
-
-.card-2-6 {
-  grid-column: span 2;
-  grid-row: span 6;
-  background-color: grey;
-}
-
-.card-2-7 {
-  grid-column: span 2;
-  grid-row: span 7;
-  background-color: grey;
-}
-
-
-.card-2-8 {
-  grid-column: span 2;
-  grid-row: span 8;
-  background-color: grey;
-}
-
-.card-3-1 {
-  grid-column: span 3;
-  grid-row: span 1;
-  background-color: grey;
-}
-
-
-.card-3-2 {
-  grid-column: span 3;
-  grid-row: span 2;
-  background-color: grey;
-}
-
-.card-3-3 {
-  grid-column: span 3;
-  grid-row: span 3;
-  background-color: grey;
-}
-
-.card-3-4 {
-  grid-column: span 3;
-  grid-row: span 4;
-  background-color: grey;
-}
-
-
-.card-3-7 {
-  grid-column: span 12;       // Mobile
-  grid-row: span 13;
-  background-color: grey;
-  @include media(m) {       // Desktop
-    grid-column: span 3;
-    grid-row: span 7;
-  }
-}
-
-.card-4-1 {
-  grid-column: span 4;
-  grid-row: span 1;
-  background-color: grey;
-}
-
-.card-4-2 {
-  grid-column: span 4;
-  grid-row: span 2;
-  background-color: grey;
-}
-
-.card-4-6 {
-  grid-column: span 4;
-  grid-row: span 6;
-  background-color: grey;
-}
-
-.card-4-7 {
-  grid-column: span 4;
-  grid-row: span 7;
-  background-color: grey;
-}
-
-.card-4-8 {
-  grid-column: span 4;
-  grid-row: span 8;
-  background-color: grey;
-}
-
-.card-4-9 {
-  grid-column: span 4;
-  grid-row: span 9;
-  background-color: grey;
-}
-
-.card-4-13 {
-  grid-column: span 4;
-  grid-row: span 13;
-  background-color: grey;
-}
-
-.card-4-14 {
-  grid-column: span 4;
-  grid-row: span 14;
-  background-color: grey;
-}
-
-.card-4-15 {
-  grid-column: span 4;
-  grid-row: span 15;
-  background-color: grey;
-}
-
-.card-4-16 {
-  grid-column: span 4;
-  grid-row: span 16;
-  background-color: grey;
-}
-
-
-.card-6-3 {
-  grid-column: span 6;
-  grid-row: span 3;
-  background-color: grey;
-}
-
-.card-6-2 {
-  grid-column: span 6;
-  grid-row: span 2;
-  background-color: grey;
-}
-
-.card-6-4 {
-  grid-column: span 6;
-  grid-row: span 4;
-  background-color: grey;
-}
-
-
-.card-6-7 {
-  grid-column: span 12;
-  grid-row: span 13;
-  background-color: grey;
-  @include media(m) {
-    grid-column: span 6;
-    grid-row: span 7;
-  }
-
-}
-
-
-.card-6-14 {
-  grid-column: span 12;
-  grid-row: span 13;
-  background-color: grey;
-  @include media(m) {
-    grid-column: span 6;
-    grid-row: span 14;
-  }
-}
-
-
-.card-8-1 {
-  grid-column: span 8;
-  grid-row: span 1;
   background-color: grey;
 }
