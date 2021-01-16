@@ -88,58 +88,49 @@ div[class^="card-"] {
 .card-2-4 {
   grid-column: span 2;
   grid-row: span 4;
-  background-color: grey;
 }
 
 .card-2-6 {
   grid-column: span 2;
   grid-row: span 6;
-  background-color: grey;
 }
 
 .card-2-7 {
   grid-column: span 2;
   grid-row: span 7;
-  background-color: grey;
 }
 
 
 .card-2-8 {
   grid-column: span 2;
   grid-row: span 8;
-  background-color: grey;
 }
 
 .card-3-1 {
   grid-column: span 3;
   grid-row: span 1;
-  background-color: grey;
 }
 
 
 .card-3-2 {
   grid-column: span 3;
   grid-row: span 2;
-  background-color: grey;
 }
 
 .card-3-3 {
   grid-column: span 3;
   grid-row: span 3;
-  background-color: grey;
 }
 
 .card-3-4 {
   grid-column: span 3;
   grid-row: span 4;
-  background-color: grey;
 }
 
 
 .card-3-7 {
   grid-column: span 12;       // Mobile
   grid-row: span 13;
-  background-color: grey;
   @include media(m) {       // Desktop
     grid-column: span 3;
     grid-row: span 7;
@@ -149,87 +140,73 @@ div[class^="card-"] {
 .card-4-1 {
   grid-column: span 4;
   grid-row: span 1;
-  background-color: grey;
 }
 
 .card-4-2 {
   grid-column: span 4;
   grid-row: span 2;
-  background-color: grey;
 }
 
 .card-4-6 {
   grid-column: span 4;
   grid-row: span 6;
-  background-color: grey;
 }
 
 .card-4-7 {
   grid-column: span 4;
   grid-row: span 7;
-  background-color: grey;
 }
 
 .card-4-8 {
   grid-column: span 4;
   grid-row: span 8;
-  background-color: grey;
 }
 
 .card-4-9 {
   grid-column: span 4;
   grid-row: span 9;
-  background-color: grey;
 }
 
 .card-4-13 {
   grid-column: span 4;
   grid-row: span 13;
-  background-color: grey;
 }
 
 .card-4-14 {
   grid-column: span 4;
   grid-row: span 14;
-  background-color: grey;
 }
 
 .card-4-15 {
   grid-column: span 4;
   grid-row: span 15;
-  background-color: grey;
 }
 
 .card-4-16 {
   grid-column: span 4;
   grid-row: span 16;
-  background-color: grey;
 }
 
 
 .card-6-3 {
   grid-column: span 6;
   grid-row: span 3;
-  background-color: grey;
 }
 
 .card-6-2 {
   grid-column: span 6;
   grid-row: span 2;
-  background-color: grey;
 }
 
 .card-6-4 {
   grid-column: span 6;
   grid-row: span 4;
-  background-color: grey;
 }
 
 
 .card-6-7 {
   grid-column: span 12;
   grid-row: span 13;
-  background-color: grey;
   @include media(m) {
     grid-column: span 6;
     grid-row: span 7;
@@ -241,7 +218,6 @@ div[class^="card-"] {
 .card-6-14 {
   grid-column: span 12;
   grid-row: span 13;
-  background-color: grey;
   @include media(m) {
     grid-column: span 6;
     grid-row: span 14;
@@ -252,5 +228,5 @@ div[class^="card-"] {
 .card-8-1 {
   grid-column: span 8;
   grid-row: span 1;
-  background-color: grey;
+  align-items: center;
 }
