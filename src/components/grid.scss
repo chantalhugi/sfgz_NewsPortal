@@ -73,7 +73,9 @@ div[class^="card-"] {
   grid-column-gap: 1.5rem;
   grid-template-rows: repeat(15, 1fr);
   grid-row-gap: 1.5rem;
-  height: 20rem;
+  @include media(m) {
+    height: 20rem;
+  }
 }
 
 
@@ -102,8 +104,12 @@ div[class^="card-"] {
 
 
 .card-2-8 {
-  grid-column: span 2;
-  grid-row: span 8;
+  grid-column: span 6;
+  grid-row: span 11;
+  @include media(m) {
+    grid-column: span 2;
+    grid-row: span 8;
+  }
 }
 
 .card-3-1 {
@@ -138,8 +144,12 @@ div[class^="card-"] {
 }
 
 .card-4-1 {
-  grid-column: span 4;
+  grid-column: span 12;
   grid-row: span 1;
+  @include media(m) {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
 }
 
 .card-4-2 {
@@ -183,9 +193,15 @@ div[class^="card-"] {
 }
 
 .card-4-16 {
-  grid-column: span 4;
+  grid-column: span 12;
   grid-row: span 16;
+  @include media(m) {
+    grid-column: span 4;
+    grid-row: span 16;
+  }
 }
+
+
 
 
 .card-6-3 {
@@ -226,7 +242,17 @@ div[class^="card-"] {
 
 
 .card-8-1 {
-  grid-column: span 8;
+  grid-column: span 12;
   grid-row: span 1;
   align-items: center;
+  @include media(m) {
+    grid-column: span 8;
+    grid-row: span 1;
+  }
+}
+
+
+.bild_in_grid {
+  overflow: hidden;
+  height: 18.5rem;
 }
