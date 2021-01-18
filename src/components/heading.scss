@@ -63,6 +63,14 @@ h5 {
 }
 
 h6 {
-  font-size: 0.7rem;
+  font-size: 0.7rem * $font-scale--default;
     margin-bottom: 0em;
+
+    @include media(m) {
+      font-size: 2rem * $font-scale--m * $font-scale--m;
+    }
+
+    @include media(l) {
+      font-size: 0.6rem * $font-scale--l;
+    }
 }

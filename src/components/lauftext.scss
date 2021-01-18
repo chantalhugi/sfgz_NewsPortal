@@ -1,0 +1,15 @@
+// Lauftext
+
+p {
+  font-size: 0.8rem ;
+  margin-bottom: 0em;
+  margin-top: 0.25em;
+
+  @include media(m) {
+    font-size: 1.1rem;
+  }
+
+  @include media(l) {
+    font-size: 0.8rem;
+  }
+}
