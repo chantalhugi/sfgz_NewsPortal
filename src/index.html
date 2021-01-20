@@ -11,21 +11,20 @@
 <body>
 
   <!-- Navigation Start-->
-
   <div class="header">
     <div class="container container--nav">
       <div class="nav">
         <nav class="nav__inner">
           <div style="float:left;height:0.25rem;width:auto;margin-top:-0.25em;margin-left:-0.4em;margin-right:2em;"><img src="./assets/images/Logo_SRF.jpg" alt="SRF Logo" /></div>
           <a class="nav__item nav__item--active" href="#home">Übersicht</a>
-          <a class="nav__item" href="#x">Schweiz</a>
-          <a class="nav__item" href="#b">International</a>
-          <a class="nav__item" href="#c">Wirtschaft</a>
-          <a class="nav__item" href="#d">Panorama</a>
-          <a class="nav__item" href="#e">Analysen</a>
-          <a class="nav__item" href="#f">Sport</a>
-          <a class="nav__item" href="#g">Kultur</a>
-          <a class="nav__item" href="#h">DOK</a>
+          <a class="nav__item schweiz" href="#x">Schweiz</a>
+          <a class="nav__item international" href="#b">International</a>
+          <a class="nav__item wirtschaft" href="#c">Wirtschaft</a>
+          <a class="nav__item panorama" href="#d">Panorama</a>
+          <a class="nav__item analysen" href="#e">Analysen</a>
+          <a class="nav__item sport" href="#f">Sport</a>
+          <a class="nav__item kultur" href="#g">Kultur</a>
+          <a class="nav__item dok" href="#h">DOK</a>
         </nav>
       </div>
     </div>
@@ -46,6 +45,11 @@
           <div class="teaser_tag">
             <p>INTERNATIONAL</p>
           </div>
+          <div class="like_box">
+            <span class="likebtn-wrapper" data-theme="custom" data-btn_size="25" data-f_size="14" data-icon_size="22" data-icon_l="hrt5" data-icon_d="hrt7" data-icon_l_c_v="#b3001d" data-lang="de" data-ef_voting="grow" data-identifier="like-button" data-show_like_label="false" data-dislike_enabled="false" data-share_enabled="false"></span>
+            <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+          </div>
+
           <div class="teaser_box">
             <div class="text_auf_bild">
               <h5>Austritt aus der EU</h5>
@@ -68,7 +72,7 @@
           <div class="teaser_box">
             <div id="text_auf_bild">
               <h5>Bezahl-App</h5>
-              <h3>Grossbritannien will Brexit-Gespräche nun doch weiterführen</h3>
+              <h3>Zahl verdoppelt: Twint registriert drei Millionen Nutzer</h3>
             </div>
           </div>
         </div>
@@ -111,43 +115,25 @@
       </div>
     </div>
     <br />
-
-
     <!-- braking News end-->
 
 
-    <!-- Wirtschaft + Panorama Start-->
-
-    <div class="grid-12-6">
-      <div class="card-8-1">
+    <!-- Wirtschaft + Wetter Start-->
+    <div class="grid-12-6 grid-test">
+      <div class="card-8-1 wirtschaft-titel">
         <hr style="background-color:#3023AE" />
         <h6 style="color:#3023AE;width:80%">WIRTSCHAFT</h6>
         <div style="float:right;height:1.2rem;width:auto;margin-top:-1em;"> <img src="./assets/images/NP_Pfeile-Wirtschaft.svg" /> </div>
       </div>
 
-
-      <div class="card-4-16">
-        <div class="card-4-1">
-          <hr style="background-color:#FFC300" />
-          <h6 style="color:#FFC300;width:80%">PANORAMA</h6>
-          <div style="float:right;height:1.2rem;width:auto;margin-top:-1em;"> <img src="./assets/images/NP_Pfeile-Panorama.svg" /> </div>
-        </div>
-
-        <div class="card-4-16">
-          <div style="margin-top:1.5em;" class="bild_in_grid">
-            <img src="./assets/images/NP_Alpenblick.png" alt="Alpenwelt" />
-          </div>
-          <h5>Gemalte Alpenwelt</h5>
-          <h3>Der eigentümliche Charme
-            <br />
-            der Panoramakarte
-          </h3>
-        </div>
+      <div class="card-4-1 wetter-titel">
+        <hr/>
+        <h6 style="width:80%">WETTER</h6>
       </div>
 
 
 
-      <div class="card-4-16">
+      <div class="card-4-16 wirtschaft-beitrag-gross">
         <div class="bild_in_grid">
           <img src="./assets/images/NP_HomeOffice.png" alt="Netzwerke" />
         </div>
@@ -159,7 +145,7 @@
       </div>
 
 
-      <div class="card-2-8">
+      <div class="card-2-8 wirtschaft-beitrag-klein-1">
         <div class="bild_in_grid_01">
           <img src="./assets/images/NP_Seco.png" alt="Seco" />
         </div>
@@ -167,7 +153,7 @@
         <h3>Kommt es doch nicht ganz so schlimm?</h3>
       </div>
 
-      <div class="card-2-8">
+      <div class="card-2-8 wirtschaft-beitrag-klein-2">
         <div class="bild_in_grid_01">
           <img src="./assets/images/NP_Laeden.png" alt="Laeden" />
         </div>
@@ -176,7 +162,13 @@
       </div>
 
 
-      <div class="card-2-8">
+      <div class="card-4-16 wetter-widget">
+        <div><img src="./assets/images/NP_wetter.svg" alt="Wetter" /></div>
+      </div>
+
+
+
+      <div class="card-2-8 wirtschaft-beitrag-klein-3">
         <div class="bild_in_grid_01">
           <img src="./assets/images/NP_Roche.png" alt="Roche" />
         </div>
@@ -185,7 +177,7 @@
       </div>
 
 
-      <div class="card-2-8">
+      <div class="card-2-8 wirtschaft-beitrag-klein-4">
         <div class="bild_in_grid_01">
           <img src="./assets/images/NP_UBS.png" alt="UBS" />
         </div>
@@ -193,9 +185,9 @@
         <h3>Stabilisator Sergio Ermotti sagt Ciao</h3>
       </div>
     </div>
-    <br />
 
-    <!-- Wirtschaft + Panorama END -->
+    <br />
+    <!-- Wirtschaft + Wetter END -->
 
 
     <!-- Wetter + Werbung Start -->
@@ -209,9 +201,6 @@
       <div class="card-4-4">
         <hr />
         <h6>WETTER</h6>
-        <div class="bild_in_grid_werbung">
-          <iframe scrolling="no" style="border:0;margin-top:1rem;" src="https://meteo.search.ch/widget/Z%C3%BCrich"></iframe>
-        </div>
       </div>
 
       <div class="card-8-4">
@@ -231,63 +220,30 @@
   <div class="container">
     <br />
     <br />
-    <br />
-    <br />
-    <h1>Das ist ein Test</h1>
 
-    <h2>Grid · Aufbau</h2>
-    <div class="grid-12">
-      <div class="column-12">12 Columns</div>
-
-      <div class="column-1">1</div>
-      <div class="column-1">2</div>
-      <div class="column-1">3</div>
-      <div class="column-1">4</div>
-      <div class="column-1">5</div>
-      <div class="column-1">6</div>
-      <div class="column-1">7</div>
-      <div class="column-1">8</div>
-      <div class="column-1">9</div>
-      <div class="column-1">10</div>
-      <div class="column-1">11</div>
-      <div class="column-1">12</div>
-    </div>
-    <h2>Grid · Anwendung</h2>
-
-    <div class="grid-12">
-      <div class="column-2">2C</div>
-      <div class="column-2">2C</div>
-      <div class="column-2">2C</div>
-      <div class="column-2">2C</div>
-      <div class="column-2">2C</div>
-      <div class="column-2">2C</div>
-
-      <div class="column-4">4C</div>
-      <div class="column-2">2C</div>
-      <div class="column-3">3C</div>
-      <div class="column-3">
-        3C
-        <img src="./assets/images/test-image.svg" alt="Testbild" />
+    <div class="card-4-16 grid-j">
+      <div class="card-4-1">
+        <hr style="background-color:#FFC300" />
+        <h6 style="color:#FFC300;width:80%">PANORAMA</h6>
+        <div style="float:right;height:1.2rem;width:auto;margin-top:-1em;"> <img src="./assets/images/NP_Pfeile-Panorama.svg" /> </div>
       </div>
 
-      <div class="column-5to12">5 – 12C</div>
+      <div class="card-4-16">
+        <div style="margin-top:1.5em;" class="bild_in_grid">
+          <img src="./assets/images/NP_Alpenblick.png" alt="Alpenwelt" />
+        </div>
+        <h5>Gemalte Alpenwelt</h5>
+        <h3>Der eigentümliche Charme
+          <br />
+          der Panoramakarte
+        </h3>
+      </div>
     </div>
 
     <br />
     <br />
-    <h2>xy-Grid · Anwendung</h2>
-
-    <div class="grid-12-6">
-      <div class="card-2-4">Karte 2 × 4</div>
-      <div class="card-2-4">Karte 2 × 4</div>
-      <div class="card-4-2">Karte 4 × 2</div>
-      <div class="card-2-4">Karte 2 × 4</div>
-      <div class="card-4-2">Karte 4 × 2</div>
-      <div class="card-2-4">Karte 2 × 4</div>
-      <div class="card-4-2">Karte 4 × 2</div>
-      <div class="card-4-2">Karte 4 × 2</div>
-      <div class="card-4-2">Karte 4 × 2</div>
-    </div>
+    <br />
+    <br />
 
     <br />
     <br />

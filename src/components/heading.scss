@@ -44,9 +44,13 @@ h2 {
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
     margin-bottom: 0em;
     margin-top: 0.5em;
+
+    @include media(m) {
+      font-size: 0.5rem * $font-scale--m * $font-scale--m;
+    }
 }
 
 
@@ -57,9 +61,13 @@ h4 {
 
 
 h5 {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-weight: 400;
     margin-bottom: 0em;
+
+      @include media(m) {
+        font-size: 0.4rem * $font-scale--m * $font-scale--m;
+      }
 }
 
 h6 {

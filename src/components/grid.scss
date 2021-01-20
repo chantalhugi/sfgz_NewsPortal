@@ -76,6 +76,70 @@ div[class^="card-"] {
   }
 }
 
+
+--------------------------------------
+
+.wirtschaft-titel { grid-area: wirtschaft-titel; }
+.wetter-titel { grid-area: wetter-titel; }
+.wirtschaft-beitrag-gross { grid-area: wirtschaft-beitrag-gross; }
+.wirtschaft-beitrag-klein-1 { grid-area: wirtschaft-beitrag-klein-1; }
+.wirtschaft-beitrag-klein-2 { grid-area: wirtschaft-beitrag-klein-2; }
+.wirtschaft-beitrag-klein-3 { grid-area: wirtschaft-beitrag-klein-3; }
+.wirtschaft-beitrag-klein-4 { grid-area: wirtschaft-beitrag-klein-4; }
+.wetter-widget { grid-area: wetter-widget; }
+
+
+
+
+.grid-test { // Grid Mobile
+  grid-template-areas:
+  "wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel"
+  "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
+  "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
+  "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
+  "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
+  "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
+  "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
+  "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
+  "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
+  "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
+  "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
+  "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
+  "wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget";
+
+
+  @include media(m) {  //Desktop
+    grid-template-areas:
+    "wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wirtschaft-titel wetter-titel wetter-titel wetter-titel wetter-titel"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget"
+    "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wetter-widget wetter-widget wetter-widget wetter-widget";
+  }
+}
+
+
+
+--------------------------------------
+
+
+
 .grid-12-6 img {
   display: block;
   object-fit: cover;
@@ -137,8 +201,8 @@ div[class^="card-"] {
 }
 
 .card-3-7 {
+    // Mobile
   grid-column: span 12;
-  // Mobile
   grid-row: span 13;
   @include media(m) {
     // Desktop
@@ -338,6 +402,8 @@ div[class^="card-"] {
     grid-row: span 1;
   }
 }
+
+
 //Bild einpassen im grid
 .bild_in_grid {
   overflow: hidden;
@@ -354,5 +420,5 @@ div[class^="card-"] {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
