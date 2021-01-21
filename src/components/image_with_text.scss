@@ -54,3 +54,31 @@ h3.text_auf_bild {
   right: 10;
   top: 10;
 }
+
+
+
+.like_box_unlike {
+  position: absolute;
+  right: 10;
+  top: 10;
+  overflow: hidden;
+  height: 1.6rem;
+  width: 10%;
+  @include media(m) {
+    height: 1.35rem;
+    width: 16%;
+  }
+}
+
+.like_box_unlike_fussball {
+  position: absolute;
+  right: 10;
+  top: 10;
+  overflow: hidden;
+  height: 1.6rem;
+  width: 10%;
+  @include media(m) {
+    height: 1.35rem;
+    width: 8%;
+  }
+}

@@ -46,8 +46,19 @@
             <p>INTERNATIONAL</p>
           </div>
           <div class="like_box">
-            <span class="likebtn-wrapper" data-theme="custom" data-btn_size="25" data-f_size="14" data-icon_size="22" data-icon_l="hrt5" data-icon_d="hrt7" data-icon_l_c_v="#b3001d" data-lang="de" data-ef_voting="grow" data-identifier="like-button" data-show_like_label="false" data-dislike_enabled="false" data-share_enabled="false"></span>
-            <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+            <span class="likebtn-wrapper" data-theme="custom" data-btn_size="25" data-f_size="14" data-icon_size="22" data-icon_l="hrt5" data-icon_d="hrt7" data-icon_l_c_v="#b3001d" data-lang="de" data-ef_voting="grow" data-identifier="like-button"
+              data-show_like_label="false" data-dislike_enabled="false" data-share_enabled="false"></span>
+            <script>
+              (function(d, e, s) {
+                if (d.getElementById("likebtn_wjs")) return;
+                a = d.createElement(e);
+                m = d.getElementsByTagName(e)[0];
+                a.async = 1;
+                a.id = "likebtn_wjs";
+                a.src = s;
+                m.parentNode.insertBefore(a, m)
+              })(document, "script", "//w.likebtn.com/js/w/widget.js");
+            </script>
           </div>
 
           <div class="teaser_box">
@@ -64,15 +75,16 @@
       <div class="card-3-7">
         <div class="teaser">
           <div class="teaser_bild">
-            <img src="./assets/images/NP_Bezahlen.png" alt="Europa" />
+            <img src="./assets/images/NP_Bezahlen.png" alt="Bezahlung" />
           </div>
+          <div class="like_box_unlike"><img src="./assets/images/NP_unlike.png" alt="unlike" /></div>
           <div class="teaser_tag">
             <p style="background-color:#3023AE;">WIRTSCHAFT</p>
           </div>
           <div class="teaser_box">
             <div id="text_auf_bild">
               <h5>Bezahl-App</h5>
-              <h3>Zahl verdoppelt: Twint registriert drei Millionen Nutzer</h3>
+              <h3>Zahl verdoppelt: Twint registriert  drei Millionen Nutzer</h3>
             </div>
           </div>
         </div>
@@ -84,6 +96,7 @@
           <div class="teaser_bild">
             <img src="./assets/images/NP_Netze.png" alt="Netzwerke" />
           </div>
+          <div class="like_box_unlike"><img src="./assets/images/NP_unlike.png" alt="unlike" /></div>
           <div class="teaser_tag">
             <p style="background-color:#FFC300;">PANORAMA</p>
           </div>
@@ -101,6 +114,7 @@
         <div class="teaser">
           <div class="teaser_bild">
             <img src="./assets/images/NP_Fussball.png" alt="Fussball" />
+            <div class="like_box_unlike_fussball"><img src="./assets/images/NP_unlike.png" alt="unlike" /></div>
             <div class="teaser_tag">
               <p style="background-color:#6DD7C7;">SPORT</p>
             </div>
@@ -127,7 +141,7 @@
       </div>
 
       <div class="card-4-1 wetter-titel">
-        <hr/>
+        <hr />
         <h6 style="width:80%">WETTER</h6>
       </div>
 
@@ -163,7 +177,7 @@
 
 
       <div class="card-4-16 wetter-widget">
-        <div><img src="./assets/images/NP_wetter.svg" alt="Wetter" /></div>
+        <div><img src="./assets/images/NP_wetter.png" alt="Wetter" /></div>
       </div>
 
 
@@ -185,107 +199,101 @@
         <h3>Stabilisator Sergio Ermotti sagt Ciao</h3>
       </div>
     </div>
-
     <br />
-    <!-- Wirtschaft + Wetter END -->
-
-
-    <!-- Wetter + Werbung Start -->
     <br />
     <br />
     <br />
     <br />
     <br />
     <br />
+    <!-- Wirtschaft + Wetter END -->
+
+
+    <!-- Newsletter + Werbung Start -->
     <div class="grid-12-6">
-      <div class="card-4-4">
+      <div class="card-4-5 bild_in_grid_passend">
+        <img src="./assets/images/NP_newsletter.png" alt="Newsletter" />
+      </div>
+
+
+      <div class="card-8-5">
+        <div class="bild_in_grid_passend">
+          <img src="./assets/images/NP_Werbe-Banner.gif" alt="Werbung" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Newsletter + Werbung End -->
+
+
+
+    <!-- page content start-->
+    <div class="grid-12-6">
+      <div class="card-12-1">
         <hr />
-        <h6>WETTER</h6>
-      </div>
-
-      <div class="card-8-4">
-        <div class="bild_in_grid_werbung">
-          <img src="./assets/images/NP_Werbung.png" alt="Werbung" />
-        </div>
+        <h6>UNSERE KOLUMNE</h6>
+        <div style="float:right;height:1.2rem;width:auto;margin-top:-1em;"> <img src="./assets/images/NP_Pfeile-Kolumne.svg" /> </div>
       </div>
     </div>
-  </div>
-
-  <!-- Wetter + Werbung End -->
-
-
-
-  <!-- page content start-->
-
-  <div class="container">
-    <br />
-    <br />
-
-    <div class="card-4-16 grid-j">
-      <div class="card-4-1">
-        <hr style="background-color:#FFC300" />
-        <h6 style="color:#FFC300;width:80%">PANORAMA</h6>
-        <div style="float:right;height:1.2rem;width:auto;margin-top:-1em;"> <img src="./assets/images/NP_Pfeile-Panorama.svg" /> </div>
       </div>
+    <br />
+    <!-- page content end -->
 
-      <div class="card-4-16">
-        <div style="margin-top:1.5em;" class="bild_in_grid">
-          <img src="./assets/images/NP_Alpenblick.png" alt="Alpenwelt" />
+
+
+
+
+
+
+
+
+
+    <!-- Footer start-->
+    <footer>
+      <div class="container">
+        <div class="grid-12-6 footer">
+        <div class="card-4-1">
+          <hr style="background-color:white" />
+          <h6 style="color:white">KONTAKT</h6>
+          <h5>Schweizer Radio und Fernsehen (SRF) ist die Zweigniederlassung der Schweizerischen Radio- und Fernsehgesellschaft SRG SSR in der Deutschschweiz.
+            <br />
+            <br />
+            Anschrift:
+            <br />
+            Schweizer Radio und Fernsehen<br />
+            Fernsehstr. 1&ndash;4<br />
+            CH-8052 Zürich<br />
+          </h5>
         </div>
-        <h5>Gemalte Alpenwelt</h5>
-        <h3>Der eigentümliche Charme
-          <br />
-          der Panoramakarte
-        </h3>
+
+        <div class="card-4-1">
+          <hr style="background-color:white" />
+          <h6 style="color:white">KUNDENDIENST SRF</h6>
+          <h5>Beanstandungen und Beschwerden gegen Online-Inhalte, Teletext- oder Swissinfo-Angebote können bei der Ombudsstelle der SRG eingereicht werden. Sind Verstösse gegen Regelungen und Gesetze innerhalb der SRG bekannt, ist die Whistleblowing
+            / Meldestelle SRG zu kontaktieren.
+            <br />
+            <br />
+            Telefon: 0848 80 80 80
+            <br />
+            (MO bis DO: 8&ndash;18 Uhr / Freitag 8&ndash;17 Uhr)
+          </h5>
+        </div>
+
+        <div class="card-4-1">
+          <hr style="background-color:white" />
+          <h6 style="color:white">DATENSCHUTZERKLÄRUNG</h6>
+          <h5>Für Auskünfte und Anregungen zum Thema Datenschutz stehen wir bzw. unsere SRG Datenschutzberatende Ihnen gerne zur Verfügung.
+            <br />
+            <br />
+            Wenn Sie mit uns in Kontakt treten möchten, erreichen Sie uns unter folgender E-Mail Adresse: <u>datenschutz@srf.ch<u />
+          </h5>
+        </div>
+        </div>
       </div>
-    </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
+    </footer>
 
 
-    <hr />
-    <h2>Like · Komponente</h2>
-    <div component="like"></div>
-    <div component="like" start="54"></div>
-    <div component="like" start="23"></div>
-
-    <h2>Teaser · Komponente</h2>
-    <div component="teaser" type="normal" title="Titel A" subtitle="Subtitle A" src="./assets/images/test-image.svg"></div>
-    <div component="teaser" type="special" title="Titel A" subtitle="Subtitle A" src="http://placekitten.com/900/600"></div>
-
-    <br />
-    <br />
-    <hr />
-
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>Paragraph</p>
-    <hr />
-    <p><strong>Adolf Loos</strong></p>
-    <p>
-      Quelle:
-      <a href="https://de.wikisource.org/wiki/Ornament_und_Verbrechen">Wikisource</a>
-    </p>
-    <p>
-      Der mensc im sonnenspektrum, die bereits einen namen haben,
-      deren erkenntnis aber dem kommenden menschen vorbehalten ist.
-    </p>
-  </div>
-  <!-- page content end -->
-
-
-  <!-- Hamburgermenue start-->
-
-  <!-- Hamburgermenue end-->
-
-
+  <!-- Footer end-->
 
 </body>
 
