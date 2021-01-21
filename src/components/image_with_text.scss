@@ -25,14 +25,6 @@
   color: white;
 }
 
-p.text_auf_bild {
-  font-size: 14;
-  line-height: 16;
-  @include media(m) {
-    font-size: 10;
-    line-height: 18;
-  }
-}
 
 h1.text_auf_bild {
   font-size: 24;

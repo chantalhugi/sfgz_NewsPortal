@@ -1,5 +1,4 @@
 // Titel
-
 // je nach Viewport möchte ich eine verschieden stark ansteigende Titelei
 $font-scale--default: 1.12;
 $font-scale--m: 1.2;
@@ -20,11 +19,9 @@ h1 {
   font-size: 1rem * $font-scale--default * $font-scale--default;
   margin-bottom: 0.5em;
   margin-top: 0.25em;
-
   @include media(m) {
     font-size: 1rem * $font-scale--m * $font-scale--m;
   }
-
   @include media(l) {
     font-size: 0.8rem * $font-scale--l * $font-scale--l;
   }
@@ -32,12 +29,9 @@ h1 {
 
 h2 {
   font-size: 0.7rem * $font-scale--default;
-
-
   @include media(m) {
     font-size: 1rem * $font-scale--m;
   }
-
   @include media(l) {
     font-size: 1rem * $font-scale--l;
   }
@@ -45,40 +39,41 @@ h2 {
 
 h3 {
   font-size: 1rem;
-    margin-bottom: 0em;
-    margin-top: 0.5em;
-
-    @include media(m) {
-      font-size: 0.5rem * $font-scale--m * $font-scale--m;
-    }
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  @include media(m) {
+    font-size: 0.5rem * $font-scale--m * $font-scale--m;
+  }
 }
-
 
 h4 {
   font-size: 1rem;
-    margin-bottom: 0em;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  padding-right: 0.2rem;
+  @include media(m) {
+    font-size: 0.5rem * $font-scale--m * $font-scale--m;
+  }
 }
-
 
 h5 {
   font-size: 0.9rem;
   font-weight: 400;
-    margin-bottom: 0em;
-
-      @include media(m) {
-        font-size: 0.4rem * $font-scale--m * $font-scale--m;
-      }
+  margin-bottom: 0;
+  @include media(m) {
+    font-size: 0.48rem * $font-scale--m * $font-scale--m;
+  }
 }
 
 h6 {
   font-size: 0.8rem * $font-scale--default;
-    margin-bottom: 0em;
-
-    @include media(m) {
-      font-size: 2rem * $font-scale--m * $font-scale--m;
-    }
-
-    @include media(l) {
-      font-size: 0.6rem * $font-scale--l;
-    }
+  margin-bottom: 0;
+  @include media(m) {
+    font-size: 2rem * $font-scale--m * $font-scale--m;
+  }
+  @include media(l) {
+    font-size: 0.6rem * $font-scale--l;
+  }
 }
