@@ -159,6 +159,19 @@
   }
 }
 
+.card-3-10 {
+  // Mobile
+  grid-column: span 12;
+  grid-row: span 15;
+  padding-bottom: 2rem;
+  @include media(m) {
+    // Desktop
+    grid-column: span 3;
+    grid-row: span 10;
+  }
+}
+
+
 .card-4-1 {
   grid-column: span 12;
   grid-row: span 1;
@@ -388,4 +401,19 @@
 .bild_in_grid_passend {
   overflow: hidden;
   width: 100%;
+}
+
+
+.bild_in_grid_kolumne {
+  overflow: hidden;
+	width: 35%;
+	height: 35%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(m) {
+    width: 50%;
+  	height: 50%;
+  }
 }
