@@ -8,14 +8,16 @@ footer {
   right: 0;
   background: #333333;
   height: auto;
-  margin-top:20rem;
+  margin-top:5rem;
+  @include media(m) {
+    margin-top:12rem;
+  }
 }
 
 .footer h5 {
   color: #929292;
   font-size: 1rem;
   line-height: 150%;
-
   @include media(m) {
     font-size: 0.7rem;
   }

@@ -5,45 +5,13 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 1.5rem;
-  grid-template-rows: repeat(16, 1fr);
+  grid-template-rows: auto repeat(15, 1fr);
   grid-row-gap: 1.5rem;
   @include media(m) {
+    grid-template-rows: repeat(16, 1fr);
     height: 20rem;
   }
 }
-// Grid-Areas
-.wirtschaft-titel {
-  grid-area: wirtschaft-titel;
-}
-
-.wetter-titel {
-  grid-area: wetter-titel;
-}
-
-.wirtschaft-beitrag-gross {
-  grid-area: wirtschaft-beitrag-gross;
-}
-
-.wirtschaft-beitrag-klein-1 {
-  grid-area: wirtschaft-beitrag-klein-1;
-}
-
-.wirtschaft-beitrag-klein-2 {
-  grid-area: wirtschaft-beitrag-klein-2;
-}
-
-.wirtschaft-beitrag-klein-3 {
-  grid-area: wirtschaft-beitrag-klein-3;
-}
-
-.wirtschaft-beitrag-klein-4 {
-  grid-area: wirtschaft-beitrag-klein-4;
-}
-
-.wetter-widget {
-  grid-area: wetter-widget;
-}
-
 
 .grid-test {
   // Grid Mobile
@@ -54,16 +22,29 @@
   "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
   "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
   "wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross wirtschaft-beitrag-gross"
-  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
-  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
-  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
-  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
   "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
   "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
   "wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-1 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2 wirtschaft-beitrag-klein-2"
   "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
   "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
-  "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4";
+  "wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-3 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4 wirtschaft-beitrag-klein-4"
+  "wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel wetter-titel"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget"
+  "wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget wetter-widget";
   @include media(m) {
     //Desktop
     grid-template-areas:
@@ -201,7 +182,7 @@
 
 .card-4-5 {
   grid-column: span 12;
-  grid-row: span 7;
+  grid-row: span 3;
   @include media(m) {
     grid-column: span 4;
     grid-row: span 5;
@@ -258,7 +239,7 @@
 
 .card-4-17 {
   grid-column: span 12;
-  grid-row: span 2;
+  grid-row: span 8;
   @include media(m) {
     grid-column: span 4;
     grid-row: span 17;
@@ -339,7 +320,7 @@
 
 .card-8-5 {
   grid-column: span 12;
-  grid-row: span 4;
+  grid-row: span 1;
   align-items: center;
   @include media(m) {
     grid-column: span 8;
@@ -406,8 +387,8 @@
 
 .bild_in_grid_kolumne {
   overflow: hidden;
-	width: 35%;
-	height: 35%;
+	width: 35vw;
+	height: 35vw;
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -416,4 +397,76 @@
     width: 50%;
   	height: 50%;
   }
+}
+
+
+
+.bild_in_grid_wetter,
+.bild_in_grid_newsletter {
+  width: 100%;
+  img {
+    height: auto;
+  }
+}
+
+
+
+.bild_in_grid_werbung {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  @include media(m) {
+    overflow: hidden;
+    width: 100%;
+  }
+  img {
+    height: auto;
+  }
+}
+
+.newsletter-werbung {
+  height: auto;
+  grid-template-rows: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include media(m) {
+    margin-top: 8rem;
+    grid-template-rows: repeat(1,1fr);
+  }
+}
+
+
+
+
+// Grid-Areas
+.wirtschaft-titel {
+  grid-area: wirtschaft-titel;
+}
+
+.wetter-titel {
+  grid-area: wetter-titel;
+}
+
+.wirtschaft-beitrag-gross {
+  grid-area: wirtschaft-beitrag-gross;
+}
+
+.wirtschaft-beitrag-klein-1 {
+  grid-area: wirtschaft-beitrag-klein-1;
+}
+
+.wirtschaft-beitrag-klein-2 {
+  grid-area: wirtschaft-beitrag-klein-2;
+}
+
+.wirtschaft-beitrag-klein-3 {
+  grid-area: wirtschaft-beitrag-klein-3;
+}
+
+.wirtschaft-beitrag-klein-4 {
+  grid-area: wirtschaft-beitrag-klein-4;
+}
+
+.wetter-widget {
+  grid-area: wetter-widget;
 }
